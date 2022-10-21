@@ -1,3 +1,7 @@
 import React from "react"
-const App = () => <h1>Hello React</h1>
+import {Meteor} from "meteor/meteor"
+const App = () => 
+<button onClick={()=>{
+    Meteor.call("login",{username:"sanglq",pass:"123"})
+}}>Hello React</button>
 export default App
