@@ -8,6 +8,7 @@
     "@babel/runtime": "^7.19.4",
     "meteor-node-stubs": "^1.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-system-html": "^3.0.0"
   }
 }
