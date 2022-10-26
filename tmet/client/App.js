@@ -9,9 +9,16 @@ const App = () =>{
     const user = useTracker(() => Meteor.user());
     return (
         <Box>
-   {user? <Typography variant="h3">
+   {user? 
+     <Box>
+     <Typography variant="h3">
         {user.username}
-      </Typography> : <Box sx={{
+      </Typography> 
+      <Button onClick={()=>{
+        Meteor.logout()
+      }}>Logout</Button>
+    </Box>
+      : <Box sx={{
         display:"flex",
         flexDirection:"column"
     }}>
