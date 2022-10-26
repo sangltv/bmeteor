@@ -1,7 +1,13 @@
 import {Meteor} from "meteor/meteor"
+import { Accounts } from 'meteor/accounts-base';
 
-Meteor.methods({
-    login(ags){
-        console.log("GET",ags)
-    }
-})
+if (!Accounts.findUserByUsername("sanglq")){
+        Accounts.createUser({
+            username:"sanglq",
+            password:"Password"
+        })
+}
+    
+
+
+
